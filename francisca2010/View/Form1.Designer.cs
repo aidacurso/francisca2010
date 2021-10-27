@@ -49,6 +49,7 @@ namespace francisca2010
             // 
             this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 288);
             this.dataGridView1.Name = "dataGridView1";
@@ -118,6 +119,7 @@ namespace francisca2010
             this.buttonCriar.TabIndex = 6;
             this.buttonCriar.Text = "Criar";
             this.buttonCriar.UseVisualStyleBackColor = true;
+            this.buttonCriar.Click += new System.EventHandler(this.buttonCriar_Click);
             // 
             // comboBox1
             // 

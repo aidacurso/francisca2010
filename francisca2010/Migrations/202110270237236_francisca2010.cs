@@ -1,9 +1,9 @@
-﻿namespace francisca2010.Migrations
+﻿namespace francisca2010
 {
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addValorStatus : DbMigration
+    public partial class francisca2010 : DbMigration
     {
         public override void Up()
         {

@@ -11,7 +11,7 @@ namespace francisca2010.ConfigDB
     class MyEventosDbContext:DbContext
     {
         
-        DbSet<Evento> Eventos { get; set; }
-        DbSet<Status> Statuses { get; set; }
+        public DbSet<Evento> Eventos { get; set; }
+        public DbSet<Status> Statuses { get; set; }
     }
 }

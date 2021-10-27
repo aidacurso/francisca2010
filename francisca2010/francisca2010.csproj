@@ -57,9 +57,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConfigDB\MyEventosDbContext.cs" />
-    <Compile Include="Migrations\202110201917293_addValorStatus.cs" />
-    <Compile Include="Migrations\202110201917293_addValorStatus.designer.cs">
-      <DependentUpon>202110201917293_addValorStatus.cs</DependentUpon>
+    <Compile Include="Migrations\202110270224446_francisca2010.cs" />
+    <Compile Include="Migrations\202110270224446_francisca2010.designer.cs">
+      <DependentUpon>202110270224446_francisca2010.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110270237236_francisca2010.cs" />
+    <Compile Include="Migrations\202110270237236_francisca2010.designer.cs">
+      <DependentUpon>202110270237236_francisca2010.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\Form1.cs">
@@ -72,8 +76,11 @@
     <Compile Include="Model\Status.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Migrations\202110201917293_addValorStatus.resx">
-      <DependentUpon>202110201917293_addValorStatus.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202110270224446_francisca2010.resx">
+      <DependentUpon>202110270224446_francisca2010.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110270237236_francisca2010.resx">
+      <DependentUpon>202110270237236_francisca2010.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

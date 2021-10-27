@@ -10,5 +10,9 @@ namespace francisca2010.Model
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        public override string ToString()
+        {
+            return Nome;
+        }
     }
 }
