@@ -47,21 +47,20 @@ namespace francisca2010
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 288);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 234);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(786, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(598, 122);
             this.dataGridView1.TabIndex = 0;
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.groupBox1.Controls.Add(this.buttonExcluir);
             this.groupBox1.Controls.Add(this.buttonCancelar);
             this.groupBox1.Controls.Add(this.buttonEditar);
@@ -73,9 +72,11 @@ namespace francisca2010
             this.groupBox1.Controls.Add(this.labelNome);
             this.groupBox1.Controls.Add(this.textNome);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(786, 270);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(598, 219);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Eventos";
@@ -83,39 +84,46 @@ namespace francisca2010
             // buttonExcluir
             // 
             this.buttonExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExcluir.Location = new System.Drawing.Point(417, 226);
+            this.buttonExcluir.Location = new System.Drawing.Point(313, 184);
+            this.buttonExcluir.Margin = new System.Windows.Forms.Padding(2);
             this.buttonExcluir.Name = "buttonExcluir";
-            this.buttonExcluir.Size = new System.Drawing.Size(101, 38);
+            this.buttonExcluir.Size = new System.Drawing.Size(76, 31);
             this.buttonExcluir.TabIndex = 9;
             this.buttonExcluir.Text = "Excluir";
             this.buttonExcluir.UseVisualStyleBackColor = true;
+            this.buttonExcluir.Click += new System.EventHandler(this.buttonExcluir_Click);
             // 
             // buttonCancelar
             // 
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCancelar.Location = new System.Drawing.Point(571, 226);
+            this.buttonCancelar.Location = new System.Drawing.Point(428, 184);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(101, 38);
+            this.buttonCancelar.Size = new System.Drawing.Size(76, 31);
             this.buttonCancelar.TabIndex = 8;
             this.buttonCancelar.Text = "Cancelar";
             this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
             // 
             // buttonEditar
             // 
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonEditar.Location = new System.Drawing.Point(270, 226);
+            this.buttonEditar.Location = new System.Drawing.Point(202, 184);
+            this.buttonEditar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(101, 38);
+            this.buttonEditar.Size = new System.Drawing.Size(76, 31);
             this.buttonEditar.TabIndex = 7;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonCriar
             // 
             this.buttonCriar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCriar.Location = new System.Drawing.Point(117, 226);
+            this.buttonCriar.Location = new System.Drawing.Point(88, 184);
+            this.buttonCriar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCriar.Name = "buttonCriar";
-            this.buttonCriar.Size = new System.Drawing.Size(101, 38);
+            this.buttonCriar.Size = new System.Drawing.Size(76, 31);
             this.buttonCriar.TabIndex = 6;
             this.buttonCriar.Text = "Criar";
             this.buttonCriar.UseVisualStyleBackColor = true;
@@ -125,27 +133,30 @@ namespace francisca2010
             // 
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(194, 166);
+            this.comboBox1.Location = new System.Drawing.Point(146, 135);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
+            this.comboBox1.Size = new System.Drawing.Size(92, 24);
             this.comboBox1.TabIndex = 5;
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(657, 81);
+            this.dateTimePicker1.Location = new System.Drawing.Point(493, 66);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(106, 26);
+            this.dateTimePicker1.Size = new System.Drawing.Size(80, 23);
             this.dateTimePicker1.TabIndex = 4;
             // 
             // labelStatus
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelStatus.Location = new System.Drawing.Point(30, 166);
+            this.labelStatus.Location = new System.Drawing.Point(22, 135);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(134, 20);
+            this.labelStatus.Size = new System.Drawing.Size(115, 17);
             this.labelStatus.TabIndex = 3;
             this.labelStatus.Text = "Status do evento";
             // 
@@ -153,9 +164,10 @@ namespace francisca2010
             // 
             this.labelData.AutoSize = true;
             this.labelData.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelData.Location = new System.Drawing.Point(518, 84);
+            this.labelData.Location = new System.Drawing.Point(388, 68);
+            this.labelData.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelData.Name = "labelData";
-            this.labelData.Size = new System.Drawing.Size(122, 20);
+            this.labelData.Size = new System.Drawing.Size(105, 17);
             this.labelData.TabIndex = 2;
             this.labelData.Text = "Data do evento";
             // 
@@ -163,27 +175,31 @@ namespace francisca2010
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.labelNome.Location = new System.Drawing.Point(30, 81);
+            this.labelNome.Location = new System.Drawing.Point(22, 66);
+            this.labelNome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelNome.Name = "labelNome";
-            this.labelNome.Size = new System.Drawing.Size(130, 20);
+            this.labelNome.Size = new System.Drawing.Size(112, 17);
             this.labelNome.TabIndex = 1;
             this.labelNome.Text = "Nome do evento";
             // 
             // textNome
             // 
             this.textNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.textNome.Location = new System.Drawing.Point(194, 81);
+            this.textNome.Location = new System.Drawing.Point(146, 66);
+            this.textNome.Margin = new System.Windows.Forms.Padding(2);
             this.textNome.Name = "textNome";
-            this.textNome.Size = new System.Drawing.Size(100, 26);
+            this.textNome.Size = new System.Drawing.Size(238, 23);
             this.textNome.TabIndex = 0;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(190)))), ((int)(((byte)(170)))), ((int)(((byte)(240)))));
+            this.ClientSize = new System.Drawing.Size(616, 363);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

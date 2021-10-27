@@ -54,12 +54,67 @@ namespace francisca2010
                 };
                 contex.Eventos.Add(evento);//inserir em
                 contex.SaveChanges();
+                RefreshGrid();
             }
             else
             {
                 MessageBox.Show("você precisa selecionar um status ou inserir um evento");
             }
             
+        }
+
+        private void buttonExcluir_Click(object sender, EventArgs e)
+        {
+            //pesquisando valor no banco de chave primaria que seja igual o da celula 0
+            var t = contex.Eventos.Find((int)dataGridView1.SelectedCells[0].Value);
+            contex.Eventos.Remove(t);
+            contex.SaveChanges();
+            RefreshGrid();
+
+        }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            textNome.Text = "";
+            dateTimePicker1.Value = DateTime.Now;
+            comboBox1.Text = "Selecionar...";
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            if(buttonEditar.Text== "Editar")
+            {
+                textNome.Text = dataGridView1.SelectedCells[1].Value.ToString();
+                dateTimePicker1.Value = (DateTime)dataGridView1.SelectedCells[2].Value;
+
+
+                foreach(Status s in comboBox1.Items)
+                {
+                    if (s.Nome == dataGridView1.SelectedCells[1].Value.ToString())
+                    {
+                        comboBox1.SelectedItem = s;
+                    }
+                    
+                }
+                buttonEditar.Text = "Salvar";
+            }
+            else if(buttonEditar.Text == "Salvar")
+            {
+                var editarEventos = contex.Eventos.Find((int)dataGridView1.SelectedCells[0].Value);
+
+                editarEventos.Nome = textNome.Text;
+                editarEventos.Data = dateTimePicker1.Value;
+                editarEventos.StatusId = (comboBox1.SelectedItem as Status).Id;
+
+                contex.SaveChanges();
+                RefreshGrid();
+
+                buttonEditar.Text = "Editar";
+                textNome.Text = "";
+                dateTimePicker1.Value = DateTime.Now;
+                comboBox1.Text = "Selecionar...";
+
+            }
         }
     }
    
